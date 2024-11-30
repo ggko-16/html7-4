@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/icon.svg">
+    <title>მანქანების ძებნის ფორმა</title>
+</head>
+<body>
+    <h1>მანქანების ძებნის ფორმა</h1>
+    <form action="https://www.myauto.ge/ka">
+
+        <label for="brands">მანქანის ბრენდი:</label> <br>
+        <select name="mansNModels" id="brands">
+            <option value="">არჩევა...</option>
+            <option value="41">ტოიოტა</option>
+            <option value="3">ბმვ</option>
+            <option value="25">მერსედესი</option>
+            <option value="2">აუდი</option>
+            <option value="12">ფორდი</option>
+        </select> <br><br>
+
+        <label for="models">მანქანის მოდელი:</label><br>
+        <select name="mansNModel" id="models">
+            <option value="">არჩევა...</option>
+            <option value="1094">კოროლა</option>
+            <option value="103">X5</option>
+            <option value="607.608.609.12503.610.611.612.613.614.615.602.1591.603.616.617.604.1757.605.1809.606.1630">C-Class</option>
+            <option value="34">A4</option>
+            <option value="1496">Mustang</option>
+        </select> <br><br>
+
+        <label for="type">კორპუსის ტიპი:</label><br>
+        <select name="vehicleCats" id="type">
+            <option value="">არჩევა...</option>
+            <option value="1">სედანი</option>
+            <option value="2">ჰაჩბეკი</option>
+            <option value="0">SUV</option>
+            <option value="4">კუპე</option>
+            <option value="6">კაბრიოლეტი</option>
+        </select> <br><br>
+
+        <label for="gear">ტრანსმიცია:</label><br>
+        <select name="gearTypes" id="gear">
+            <option value="">არჩევა...</option>
+            <option value="2">ავტომატური</option>
+            <option value="1">მექანიკური</option>
+        </select> <br><br>
+
+        <label for="year">გამოსვლის წელი:</label><br>
+        <input type="number" id="year" name="yearFrom" value="1968">
+        <input type="number" name="yearTo" value="2020"> <br><br>
+
+        <label for="price">ფასის დიაპაზონი:</label><br>
+        <input type="number" id="price" name="priceFrom" placeholder="მაგ. 1000">
+        <input type="number" name="priceTo" placeholder="მაგ. 50000"> <br><br>
+
+        <label for="mileage">მილის დიაპაზონი:</label><br>
+        <input type="number" id="mileage" name="mileageFrom" placeholder="მაგ. 0">
+        <input type="number" name="mileageTo" placeholder="მაგ. 5000000"><br><br>
+
+        <input type="submit" value="ძებნა">
+
+    </form>
+</body>
+</html>
